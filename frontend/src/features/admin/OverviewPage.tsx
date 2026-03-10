@@ -123,7 +123,7 @@ export function OverviewPage() {
               <XAxis dataKey="month" tick={{ fontSize: 12 }} />
               <YAxis tick={{ fontSize: 12 }} />
               <Tooltip
-                formatter={(value: number) => [formatCurrency(value), 'Revenue']}
+                formatter={(value) => [formatCurrency(Number(value)), 'Revenue']}
                 contentStyle={{
                   borderRadius: '8px',
                   border: '1px solid var(--color-border, #e5e7eb)',
@@ -144,7 +144,7 @@ export function OverviewPage() {
               <XAxis dataKey="month" tick={{ fontSize: 12 }} />
               <YAxis tick={{ fontSize: 12 }} />
               <Tooltip
-                formatter={(value: number) => [value, 'Bookings']}
+                formatter={(value) => [Number(value), 'Bookings']}
                 contentStyle={{
                   borderRadius: '8px',
                   border: '1px solid var(--color-border, #e5e7eb)',
